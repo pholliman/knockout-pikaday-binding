@@ -15,7 +15,7 @@
                                                      minDate: minDate,
                                                      maxDate: maxDate,
                                                      disableWeekends: disableWeekends,
-                                                     onSelect: function(d) { valueAccessor()(dateFormat(d, 'mm/dd/yyyy')); },
+                                                     onSelect: function(d) { valueAccessor()(d); },
                                                      onClose: function() { var el = element; 
                                                                            // null out observable value if element is cleared
                                                                            if ( el.value == '' ) {   
